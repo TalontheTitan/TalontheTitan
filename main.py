@@ -36,7 +36,7 @@ while game_mode != 0:
                 raise exit()
     elif game_mode == 2:
         print("Multiple Player Chosen")
-        dside = int(x1)
+        dside = int(input("Enter the number of sides on your dice: "))
         time.sleep(1)
         player_die = (random.randrange(1, int(dside)))
         comp_die = (random.randrange(1, int(dside)))
@@ -59,7 +59,7 @@ while game_mode != 0:
             if close1 == "y":
                 menu()
                 game_mode = int(input("Which Game Mode Would You Like to Play: "))
-                x1 = input("Enter the number of sides on your dice: ")
+                dside = int(input("Enter the number of sides on your dice: "))
             else:
                 raise exit()
     else:
